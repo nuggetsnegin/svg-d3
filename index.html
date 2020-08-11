@@ -42,5 +42,19 @@
         <rect />
         <rect />
     </svg>
+
 </body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+    //wrap svg with d3
+    const svg = d3.select('#container');
+
+    //select first path in the svg
+    const select = svg.select('rect');
+
+    const selectAll = svg.selectAll('rect');
+
+    console.log('selectAll: ', selectAll);
+
+</script>
 </html>
